@@ -6,12 +6,15 @@ public class Osoba {
     private String jmeno;
     private String prijmeni;
     private String rodneCislo;
-
     private Telefon telefon;
+    private String pracovniEmail;
+    private String soukromyEmail;
 
     public String getJmeno() {
         return jmeno;
     }
+
+
 
     public void setJmeno(String jmeno) {
         Objects.requireNonNull(jmeno);
@@ -63,5 +66,23 @@ public class Osoba {
     public String toString() {
         return jmeno + " " + prijmeni + " (" + rodneCislo + ")";
     }
+
+    public void setSoukromyEmail(String soukromyEmail) {
+        this.soukromyEmail = soukromyEmail;
+    }
+
+    public String getSoukromyEmail() {
+        return soukromyEmail;
+    }
+
+
+    public String getPracovniEmail() {
+        return pracovniEmail;
+    }
+
+    public void setPracovniEmail(String pracovniEmail) {
+        this.pracovniEmail = pracovniEmail;
+    }
 }
+
 
